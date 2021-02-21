@@ -7,7 +7,11 @@ module.exports = {
             'main': ['Lato'],
         },
         colors: {
-            primary: '#367385'
+            primary: '#367385',
+            notification: '#51DC4E'
+        },
+        spacing: {
+            half: '50vh',
         }
     },
   },

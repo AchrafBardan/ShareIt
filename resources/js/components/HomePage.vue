@@ -6,10 +6,10 @@
 
 <script>
     export default {
-  methods: {
-  },
+        methods: {
+        },
         mounted() {
-            this.$router.push('/login');
+            this.$router.push('/signup');
         }
     }
 </script>
