@@ -38398,10 +38398,7 @@ var render = function() {
     _vm._v(" "),
     _c(
       "div",
-      {
-        staticClass:
-          "bg-white h-half shadow-2xl w-full absolute bottom-0 overflow-auto"
-      },
+      { staticClass: "bg-white h-half shadow-2xl w-full overflow-auto" },
       _vm._l(_vm.links, function(link) {
         return _c("div", { key: link.id }, [
           _c(

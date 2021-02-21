@@ -25,7 +25,7 @@
                 <button @click="addLink" class="text-xl font-bold bg-primary absolute bottom-0 left-0 w-full text-white rounded-b-2xl py-1">Add</button>
             </div>
         </div>
-        <div class="bg-white h-half shadow-2xl w-full absolute bottom-0 overflow-auto">
+        <div class="bg-white h-half shadow-2xl w-full overflow-auto">
             <div v-for="link in links" v-bind:key="link.id">
                 <div class="px-14 py-1 flex flex-col border-t-2 border-gray-200">
                     <a class="text-primary font-bold text-xl" :href="link.url">{{ link.url }}</a>
