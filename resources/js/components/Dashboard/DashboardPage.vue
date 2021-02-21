@@ -21,7 +21,7 @@
         </div>
         <div class="flex justify-center z-50">
             <div class="w-96 -mt-10 px-10 pb-10 pt-4 relative flex bg-white rounded-2xl">
-                <input v-model="url" class="mb-2 py-2 w-full border-b-2 border-primary" type="text" name="url" autocomplete="url" placeholder="Link" id="url" required>
+                <input v-model="url" class="mb-2 py-2 w-full border-b-2 border-primary" type="text" name="url" value="https://" autocomplete="url" placeholder="Link" id="url" required>
                 <button @click="addLink" class="text-xl font-bold bg-primary absolute bottom-0 left-0 w-full text-white rounded-b-2xl py-1">Add</button>
             </div>
         </div>
@@ -45,7 +45,7 @@ export default {
   data () {
     return {
         user: {},
-        url: 'https://',
+        url: null,
         succesNotification: false,
         lastLink: null,
         links: [],

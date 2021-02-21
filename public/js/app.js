@@ -2031,7 +2031,7 @@ __webpack_require__.r(__webpack_exports__);
   data: function data() {
     return {
       user: {},
-      url: 'https://',
+      url: null,
       succesNotification: false,
       lastLink: null,
       links: []
@@ -38370,6 +38370,7 @@ var render = function() {
             attrs: {
               type: "text",
               name: "url",
+              value: "https://",
               autocomplete: "url",
               placeholder: "Link",
               id: "url",
