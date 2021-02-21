@@ -2024,6 +2024,9 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
   data: function data() {
     return {
@@ -38393,6 +38396,17 @@ var render = function() {
             [_vm._v("Add")]
           )
         ]
+      )
+    ]),
+    _vm._v(" "),
+    _c("div", { staticClass: "flex justify-center" }, [
+      _c(
+        "button",
+        {
+          staticClass: "my-2 px-2 py-1 text-white bg-primary rounded-xl ",
+          on: { click: _vm.getLinks }
+        },
+        [_vm._v("Refresh")]
       )
     ]),
     _vm._v(" "),
