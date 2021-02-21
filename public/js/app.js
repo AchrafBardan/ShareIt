@@ -2031,7 +2031,7 @@ __webpack_require__.r(__webpack_exports__);
   data: function data() {
     return {
       user: {},
-      url: null,
+      url: 'https://',
       succesNotification: false,
       lastLink: null,
       links: []
@@ -38424,6 +38424,8 @@ var render = function() {
               _c(
                 "a",
                 {
+                  ref: "mylink",
+                  refInFor: true,
                   staticClass: "text-primary font-bold text-xl",
                   attrs: { href: link.url }
                 },

@@ -31,7 +31,7 @@
         <div class="bg-white h-half shadow-2xl w-full overflow-auto">
             <div v-for="link in links" v-bind:key="link.id">
                 <div class="px-14 py-1 flex flex-col border-t-2 border-gray-200">
-                    <a class="text-primary font-bold text-xl" :href="link.url">{{ link.url }}</a>
+                    <a ref="mylink" class="text-primary font-bold text-xl" :href="link.url">{{ link.url }}</a>
                     <a class="font-light text-sm underline text-primary">Meer info</a>
                 </div>
 
@@ -45,7 +45,7 @@ export default {
   data () {
     return {
         user: {},
-        url: null,
+        url: 'https://',
         succesNotification: false,
         lastLink: null,
         links: [],
