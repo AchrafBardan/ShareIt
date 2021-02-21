@@ -9,7 +9,7 @@
         methods: {
         },
         mounted() {
-            this.$router.push('/signup');
+            this.$router.push('/login');
         }
     }
 </script>

@@ -1867,6 +1867,9 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
   data: function data() {
     return {
@@ -1874,6 +1877,9 @@ __webpack_require__.r(__webpack_exports__);
     };
   },
   methods: {
+    goSignup: function goSignup() {
+      this.$router.push('/signup');
+    },
     login: function login() {
       var _this = this;
 
@@ -1931,6 +1937,9 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
   data: function data() {
     return {
@@ -1938,6 +1947,9 @@ __webpack_require__.r(__webpack_exports__);
     };
   },
   methods: {
+    goLogin: function goLogin() {
+      this.$router.push('/login');
+    },
     signup: function signup() {
       var _this = this;
 
@@ -2081,7 +2093,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
   methods: {},
   mounted: function mounted() {
-    this.$router.push('/signup');
+    this.$router.push('/login');
   }
 });
 
@@ -37966,7 +37978,7 @@ var render = function() {
   return _c("div", { staticClass: "font-main" }, [
     _vm._m(0),
     _vm._v(" "),
-    _c("div", { staticClass: "flex justify-center" }, [
+    _c("div", { staticClass: "flex items-center flex-col" }, [
       _c(
         "div",
         {
@@ -38044,7 +38056,15 @@ var render = function() {
             [_vm._v("Inloggen")]
           )
         ]
-      )
+      ),
+      _vm._v(" "),
+      _c("div", [
+        _c(
+          "a",
+          { staticClass: "hover:underline", on: { click: _vm.goSignup } },
+          [_vm._v("Signup")]
+        )
+      ])
     ])
   ])
 }
@@ -38094,7 +38114,7 @@ var render = function() {
   return _c("div", { staticClass: "font-main" }, [
     _vm._m(0),
     _vm._v(" "),
-    _c("div", { staticClass: "flex justify-center" }, [
+    _c("div", { staticClass: "flex flex-col items-center" }, [
       _c(
         "div",
         {
@@ -38201,7 +38221,15 @@ var render = function() {
             [_vm._v("Aanmelden")]
           )
         ]
-      )
+      ),
+      _vm._v(" "),
+      _c("div", [
+        _c(
+          "a",
+          { staticClass: "hover:underline", on: { click: _vm.goLogin } },
+          [_vm._v("Login")]
+        )
+      ])
     ])
   ])
 }
