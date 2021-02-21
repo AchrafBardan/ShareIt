@@ -38346,7 +38346,7 @@ var render = function() {
       _vm._m(0)
     ]),
     _vm._v(" "),
-    _c("div", { staticClass: "flex justify-center" }, [
+    _c("div", { staticClass: "flex justify-center z-50" }, [
       _c(
         "div",
         {
