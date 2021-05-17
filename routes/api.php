@@ -23,6 +23,7 @@ use App\Http\Controllers\User\UserController;
 Route::prefix('/auth')->group(function () {
     Route::post('/signup', [SignupController::class,'createUser']);
     Route::post('/login', [LoginController::class,'login']);
+    Route::post('/login/token', [LoginController::class,'loginWithApiToken']);
     Route::post('/logout', [LoginController::class,'logoutUser']);
 });
 
