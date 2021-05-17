@@ -33,7 +33,7 @@ class LoginController extends Controller
             return response()->json(['message'=>'succesfully logged in'],200);
         }
         else{
-            return response()->json(['message'=>'error'],200);
+            return response()->json(['message'=>'error'],400);
         }
     }
 
