@@ -1,0 +1,31 @@
+version: "3.7"
+services:
+  app:
+    build:
+      args:
+        user: achrafbardan
+        uid: 1000
+      context: ./
+      dockerfile: Dockerfile
+    image: shareit
+    container_name: shareit-app
+    restart: unless-stopped
+    working_dir: /var/www/
+    volumes:
+      - ./:/var/www
+    networks:
+      - shareit
+  nginx:
+    image: nginx:1.17-alpine
+    container_name: shareit-nginx
+    restart: unless-stopped
+    ports:
+      - 8139:80
+    volumes:
+      - ./:/var/www
+      - ./docker-compose/nginx:/etc/nginx/conf.d
+    networks:
+      - shareit
+networks:
+  shareit:
+      driver: bridge
